@@ -24,4 +24,8 @@ class FullscreenPluginCallback(private val loadPluginObject: LoadPluginEventName
     override fun onAdDismissedFullScreenContent() {
         notifyListenersFunction.accept(loadPluginObject.Dismissed, JSObject())
     }
+
+    override fun onAdClicked() {
+        notifyListenersFunction.accept(loadPluginObject.Clicked, JSObject())
+    }
 }

@@ -59,4 +59,10 @@ export interface RewardDefinitions {
     eventName: RewardAdPluginEvents.Showed,
     listenerFunc: () => void,
   ): PluginListenerHandle;
+
+
+  addListener (
+    eventName: RewardAdPluginEvents.Clicked,
+    listenerFunc: () => void,
+  ): PluginListenerHandle;
 }

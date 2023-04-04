@@ -54,4 +54,11 @@ export interface InterstitialDefinitions {
     eventName: InterstitialAdPluginEvents.Showed,
     listenerFunc: () => void,
   ): PluginListenerHandle;
+
+
+  addListener (
+    eventName: InterstitialAdPluginEvents.Clicked,
+    listenerFunc: () => void,
+  ): PluginListenerHandle;
+
 }

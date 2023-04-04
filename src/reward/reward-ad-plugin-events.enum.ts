@@ -30,4 +30,8 @@ export enum RewardAdPluginEvents {
    * Emits when user get rewarded from AdReward
    */
   Rewarded= 'onRewardedVideoAdReward',
+  /**
+   * Emits when the Interstitial ad is clicked by the user
+   */
+  Clicked = 'onRewardedVideoAdClicked'
 }

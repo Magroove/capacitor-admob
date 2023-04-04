@@ -19,5 +19,9 @@ export enum InterstitialAdPluginEvents {
   /**
    * Emits when the Interstitial ad is not visible to the user anymore.
    */
-  Dismissed= 'interstitialAdDismissed',
+  Dismissed = 'interstitialAdDismissed',
+  /**
+   * Emits when the Interstitial ad is clicked by the user
+   */
+  Clicked = 'interstitialAdClicked'
 }
