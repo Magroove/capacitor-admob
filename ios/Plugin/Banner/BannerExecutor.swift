@@ -168,6 +168,10 @@ class BannerExecutor: NSObject, GADBannerViewDelegate {
         ])
     }
 
+    public func bannerView(_ bannerView: GADBannerView, didReceive click: GADNativeAd) {
+        self.plugin?.notifyListeners(BannerAdPluginEvents.Opened.rawValue, data: [:])
+    }
+
     public func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
         self.plugin?.notifyListeners(BannerAdPluginEvents.AdImpression.rawValue, data: [:])
     }

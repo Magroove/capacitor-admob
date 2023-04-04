@@ -62,4 +62,9 @@ class AdInterstitialExecutor: NSObject, GADFullScreenContentDelegate {
         NSLog("InterstitialFullScreenDelegate Ad did dismiss full screen content.")
         self.plugin?.notifyListeners(InterstitialAdPluginEvents.Dismissed.rawValue, data: [:])
     }
+
+    public func adDidRecordClick(_ ad: GADFullScreenPresentingAd) {
+        NSLog("InterstitialFullScreenDelegate Ad was clicked by the user.")
+        self.plugin?.notifyListeners(InterstitialAdPluginEvents.Clicked.rawValue, data: [:])
+    }
 }

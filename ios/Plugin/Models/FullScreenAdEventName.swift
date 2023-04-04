@@ -1,5 +1,6 @@
 public enum FullScreenAdEventName: String {
     case onAdLoaded = "onAdLoaded"
+    case onAdClicked = "onAdClicked"
     case onAdFailedToLoad = "onAdFailedToLoad"
     case adDidPresentFullScreenContent = "adDidPresentFullScreenContent"
     case didFailToPresentFullScreenContentWithError = "didFailToPresentFullScreenContentWithError"
